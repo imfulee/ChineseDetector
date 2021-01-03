@@ -1,14 +1,29 @@
 # Chinese Detector
 
-A text mining model that uses `N-gram` models (in this instance 2) to detects if someone is from Taiwan or China. Originally called `共匪測試機`, and changed for the name not being very friendly to our overseas neighbours and potential overlords.
+A text mining model that uses `N-gram` models (in this instance 3) to detects if someone is from Taiwan or China. Originally called `共匪測試機`, and changed as the name was not being very friendly to our overseas neighbours and potential overlords.
+
+## Goals
+
+There are two overall goals for this project:
+
+1. Calculate the probability of whether a sequence of strings is more likely to be from Taiwan or China
+2. Predict the next character / string from a given string
 
 ## Set up 
 
-Before you start using this, please install `python 3`, `pip` and (optionally) `venv` on your computer and install the required packages from the `requirements.txt` file by using the command `pip install -r requirements.txt`.
+Install `python 3`, `pip` and (optionally) `venv` on your computer and the required packages from the `requirements.txt` file. As of writing this, there is no need to install anything other than `python 3`.
 
 ## Test environment
 
 This is tested on `python 3.8.6` on `Ubuntu 20.10` but most likely there would not be any problems if you're using `python 3.x` or running `Windows` or `Mac OS`.
+
+## Implementation
+
+As of now, we do not use the `nltk` package for our purposes, rather we wrote out own implementation of 
+
+- tokenization
+- building the n-gram 
+- smoothing technique (Jeffreys-Perks Law)
 
 ## Credits
 
@@ -19,3 +34,9 @@ Parts of my code comes from the articles I have read online and I may miss out o
 - [Building language models - bogdani](https://nlpforhackers.io/language-models/)
 - [自然語言處理 — 使用 N-gram 實現輸入文字預測 - Airwaves](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80%E8%99%95%E7%90%86-%E4%BD%BF%E7%94%A8-n-gram-%E5%AF%A6%E7%8F%BE%E8%BC%B8%E5%85%A5%E6%96%87%E5%AD%97%E9%A0%90%E6%B8%AC-10ac622aab7a)
 - [结巴:中文分词组件](https://github.com/fxsjy/jieba)
+
+## TODO
+
+- finish the model prediction scheme: function `model.py/string_prob()`
+- add smoothing to the model prediction
+- add `jieba` for (possibly) better tokenization
