@@ -11,7 +11,17 @@ There are two overall goals for this project:
 
 ## Set up 
 
-Install `python 3`, `pip` and (optionally) `venv` on your computer and the required packages from the `requirements.txt` file. As of writing this, there is no need to install anything other than `python 3`.
+Install `python 3`, `pip` and (optionally) `venv` on your computer and the required packages from the `requirements.txt` file. As of writing this, there is no need to install anything other than `python 3` to have it functional. However if you wish to use the features of 
+
+- translating 簡體華文 to 繁體華文 
+- checking the F1 score for the predictions
+
+install the required python packages
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Test environment
 
@@ -21,12 +31,12 @@ This is tested on `python 3.8.6` on `Ubuntu 20.10` and `Windows` but most likely
 
 As of now, we do not use the `nltk` package for our purposes, rather we wrote out own implementation of 
 
-- tokenization
+- tokenization (removing all non-繁體華文 unicode characters)
 - building the n-gram 
 - smoothing technique (Lidstone's Law)
 - some kind of classifier
 
-The is a wish we could pivot to use more standard packages in the future.
+We wish to pivot towards using more standard packages (such as `nltk`) in the future.
 
 ## Usage
 
@@ -44,7 +54,7 @@ Then just use your terminal/command line and type
 python3 ngram.py
 ```
 
-and type in the sentence you wish to check
+let it train and type in the sentence you wish to check
 
 ```bash
 Sentence: 我是從火星來的
@@ -60,6 +70,4 @@ Parts of my code comes from the articles I have read online and I may miss out o
 - [自然語言處理 — 使用 N-gram 實現輸入文字預測 - Airwaves](https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80%E8%99%95%E7%90%86-%E4%BD%BF%E7%94%A8-n-gram-%E5%AF%A6%E7%8F%BE%E8%BC%B8%E5%85%A5%E6%96%87%E5%AD%97%E9%A0%90%E6%B8%AC-10ac622aab7a)
 - [结巴:中文分词组件](https://github.com/fxsjy/jieba)
 
-## TODO
-
-- add `jieba` for (possibly) better tokenization
+Also, my greatest thanks to my teammates for helping me. Even though there are no commit messages written by them, most of `commit #34dd2d83` and all the web scrapping for the databases is not my work.

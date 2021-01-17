@@ -1,1 +1,5 @@
-nltk
+# translator.py
+opencc-python-reimplemented
+
+# scoring.py
+sklearn
