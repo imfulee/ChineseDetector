@@ -1,6 +1,6 @@
 from collections import Counter
 from preprocessor import clean_string, build_ngram
-import math
+import math, os
 
 class Ngram():
     def __init__(self, N: int=2):
@@ -108,10 +108,7 @@ class Ngram():
             
         return probability
 
-
-if __name__ == "__main__": 
-
-    def files_to_list(folder_directory: str) -> list:
+def files_to_list(folder_directory: str) -> list:
         """Read the files in the folder with .txt to a list
 
         Args:
@@ -121,8 +118,6 @@ if __name__ == "__main__":
             list: list with all the files turned into str
         """
         dataset = []
-        
-        import os
 
         directory = os.fsencode(folder_directory)
         for file in os.listdir(directory):
@@ -132,7 +127,9 @@ if __name__ == "__main__":
                     document_txt = doc.read()
                     dataset.append(document_txt)
 
-        return [clean_string(doc) for doc in dataset]    
+        return [clean_string(doc) for doc in dataset] 
+
+if __name__ == "__main__":  
 
     print("Process: Read the files")
     china_dataset = files_to_list('./ChinaDataset/')
