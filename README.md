@@ -15,7 +15,7 @@ Install `python 3`, `pip` and (optionally) `venv` on your computer and the requi
 
 ## Test environment
 
-This is tested on `python 3.8.6` on `Ubuntu 20.10` but most likely there would not be any problems if you're using `python 3.x` or running `Windows` or `Mac OS`.
+This is tested on `python 3.8.6` on `Ubuntu 20.10` and `Windows` but most likely there would not be any problems if you're using `python 3.x` or running `Mac OS`. 
 
 ## Implementation
 
@@ -23,7 +23,32 @@ As of now, we do not use the `nltk` package for our purposes, rather we wrote ou
 
 - tokenization
 - building the n-gram 
-- smoothing technique (Jeffreys-Perks Law)
+- smoothing technique (Lidstone's Law)
+- some kind of classifier
+
+The is a wish we could pivot to use more standard packages in the future.
+
+## Usage
+
+To use this, prepare a bunch of documents (`.txt` files) that are from China and Taiwan and seperate them in two folders (The default preset is `ChinaDataset/` and `TaiwanDataset/`). You could change the folder directories in `ngram.py`. 
+
+```python
+# change the directories if you wish
+china_dataset = files_to_list('./ChinaDataset/')
+taiwan_dataset = files_to_list('./TaiwanDataset/')
+```
+
+Then just use your terminal/command line and type 
+
+```bash
+python3 ngram.py
+```
+
+and type in the sentence you wish to check
+
+```bash
+Sentence: 我是從火星來的
+```
 
 ## Credits
 
@@ -37,6 +62,4 @@ Parts of my code comes from the articles I have read online and I may miss out o
 
 ## TODO
 
-- finish the model prediction scheme: function `model.py/string_prob()`
-- add smoothing to the model prediction
 - add `jieba` for (possibly) better tokenization
