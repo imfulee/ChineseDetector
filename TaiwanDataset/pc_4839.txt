@@ -1,0 +1,1 @@
+RTX 30系列規格 https://tinyurl.com/y6og5bwz CUDA核心比預期還多，單精度有30 TFLOPs 如果以後3080出個20GB版本，跑DL應該會很不錯 。雙精度砍光光的架構吧，省下來給光追。cuda數量根本之前預測的翻倍阿。https://i.imgur.com/yR7xVjL.jpg。價格有對應到效能，本來以為只是靠RT在膨風。如果出到20GB，N的高階DL卡是要怎麼賣啊？@@

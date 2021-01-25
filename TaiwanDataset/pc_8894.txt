@@ -1,0 +1,1 @@
+剛剛查主板資料順手翻了一下ASUS PRIME B450MA/CSM BIOS有沒有新版確認他的版本 還是在2020/12/04 Version 2409不過翻到CPU支援列表發現新增了Ryzen 7 PRO 4750 GE、Ryzen 9 5900X/5950X Sent from BePTT on my Google Pixel 3 不小心已經修正 已新增 這是個困難的問題。國王的標題。標題應該再加ASUS。請問CPU哪邊可以買到？。http://i.imgur.com/Rq2idJg.jpg。CPU 買不到有啥用。b450有支援但有人敢用嗎？XD。Amazon幾乎每天都會補貨，但是要用搶的。海鮮是買得到啦，可是要配版，要幫清板子庫存。450支援國外很多人用啊。拿TUF B450 PRO那張刷完來配 感覺滿不錯的

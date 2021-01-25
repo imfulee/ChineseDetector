@@ -1,0 +1,1 @@
+https://reurl.cc/m9AW6l) 有看到有人提供解決方法 在你的LOL資料夾裡面的Config資料夾 (台服應該是 X:\XXXX\32775\Game\Config) 有一個game.cfg 找到[Hud]這個區塊 底下新增這四行 ItemShopResizeHeight=1080 ItemShopResizeWidth=1920 ItemShopPrevResizeWidth=1920 ItemShopPrevResizeHeight=1080 看了底下留言是有效的 試試看吧 。2020了還不能在遊戲裡面直接改大小，要改設置檔。感恩。1600x900 沒用QQ。推

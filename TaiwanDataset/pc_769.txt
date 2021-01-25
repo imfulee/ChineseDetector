@@ -1,0 +1,1 @@
+想請問這張主板的規格中並不支援nvidia sli 但他有兩個pixie x16 請問這樣是否可以插兩張1080ti顯卡單獨使用 是要跑深度學習訓練的 請問兩個pcie 插槽都可發揮顯卡全部的效能嗎 謝謝 。有人測TensorFlow過要插上NVLink的Bridge才會比較快。然後NVIDIA SLI的規範，主板插槽必須跑PCI-Ex8以上。你的主機板好的第二個PCI-Ex16好像是跑x4而已。插兩張1080Ti也是可以，但效能會比有用NVLink少13%。你可以查一下別人測2080Ti+NVLink的文章。換一張支援sli pcie 8x的不就好

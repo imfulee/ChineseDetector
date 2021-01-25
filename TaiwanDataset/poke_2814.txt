@@ -1,0 +1,1 @@
+最近換手機轉過去 但手機有問題 該怎麼辦才能再次換機呢？ 沒有記錄換機code 所以點了Issue a transfer code 只有寫還剩幾天 沒有產生code 該如何是好呢？ 。Android可以透過adb backup用電腦轉移紀錄檔

@@ -1,0 +1,1 @@
+bool isProgressive(long long property Man your_man) bool bt = willToBreakThrough(Man your_man); return property >= YOUR_STANDARD ? bt : false; Sent from JPTT on my OnePlus ONEPLUS A6010. 。will to break through是？英文是否要加強XD。噢噢，是「突破的慾望」，好吧，還行。不過這跟YOUR STANDARD無關阿，就算是低於我的STANDARD的。醜男還是有可能是上進的人阿。可憐 想用英文打掉別人的言論失敗

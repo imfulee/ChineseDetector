@@ -1,0 +1,1 @@
+請問像B550 itx/matx的版子 大都是8相全數位VRM電源 有辦法hold住3900x/3950x 這類怪獸級的cpu嗎 準備趁5系列出來後 撿二手便宜貨 。3900基本上沒問題，3950難說。不要買特別丐的那幾張就沒事。https://acer.co/2RGEn8X。靠 貼錯=  =。https://bit.ly/34CLgzR  這才對。不要太丐的就好!!。mortar tuf之類的應該都可。Mortar TUF這兩張以上的 3950x預設都沒問題。但是Aorus Pro M可能是例外 規格跟大板不一樣。可能不太適合5800x 8核以上的CPU

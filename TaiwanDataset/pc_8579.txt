@@ -1,0 +1,1 @@
+ASUS B460的板子也能更新BIOS了 測試版本1601 Offer a Resize BAR Support option to enhance GPU performance. NV驅動還沒更新所以現在應該沒用 有人裝完測試過了嗎? 不過現在也要有AMD 6000系列顯卡才有用 。我說那個顯卡呢。所以I+A或A+A都能開SAM,以後。也不能嘴説A+A跑分是開掛作弊了。現在不都是在嘴DLSS偷吃步，光追無用嗎?。希望NVIDIA能支持SAM。DLSS要2.0效果才好 DXR有沒有用真的看人。NVIDIA確定會支援啊,等驅動。Z490更新BIOS後用10700和AMD 6800測試FH4效能多13%,。不知道B460怎樣。I am SAM。可惜5700xt不能用 rog b460路過

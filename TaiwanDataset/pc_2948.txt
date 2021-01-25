@@ -1,0 +1,1 @@
+最近入手 WD gaming P50 是支USB 3.2 gen2x2 (20Gbps)的速度 擴充卡是有了 不過就是缺長一點的線材 https://i.imgur.com/X4xCYUx.png 看各大電商都大部都是10Gbps等級的線材 如果有支援Thunderbolt3線材也是只支援10Gbps等級而已 例如Apple最近推出的4000塊等級的Thunderbolt3 cable 有推薦的USB 3.2 gen2x2的線材呢？ 另外USB 3.2 gen2x2和Thunderbolt3 是不是因為Pin腳不夠用沒辦法同時做在typec的線材上啊？ 。這顆硬碟國外災情很慘欸 過熱 讀寫失敗 看REVIEW。AENZR。j5create JTCX02這個規格到20G和USB3.1不知道能用嗎

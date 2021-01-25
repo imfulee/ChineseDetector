@@ -1,0 +1,1 @@
+你想問的應該是類似Steam Machine 之類的東西吧。 https://zh.wikipedia.org/wiki/Steam_Machine 這個項目幾年前就被Valve 停掉了，不過你還是可以自組類似規格的itx 機殼拿個銀欣小烏鴉之類的，可以裝獨立顯卡玩起來舒服些。 或者你可以去找找Steam Link串流遊戲畫面到電視。 至於Steam Controller 我覺得不好用，不推。 。剛好看到二手板有人要賣ITX小鋼砲全套在你預算內。

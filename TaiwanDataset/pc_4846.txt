@@ -1,0 +1,1 @@
+https://reurl.cc/Y6jGNL 剛剛看了一下RTX IO的介紹 直接從儲存裝置讀資料 不用透過CPU處理 看起來PCIE4有感的會是下一代遊戲讀取速度會大幅提升 甚至不需要讀圖了？ Sent from JPTT on my Sony G8342. 最爽的應該是做AI的吧。哇 顯卡的rdma?。我是覺得體感感不出來吧  就像ssd 的 pcie 直連cpu。跟 透過 pch 轉接的差別。還是說老電腦會有差？。讀圖...現在有差？ 有差的應該也是因為HDD慢吧？。這個也要特定新遊戲才支援吧？要新的DX API?。透過pch跟直連cpu的latency應該有差.。下一代遊戲...那我下一代再買就好
