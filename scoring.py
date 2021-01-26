@@ -1,30 +1,12 @@
 from sklearn.metrics import classification_report
 import os
 from ngram import *
+from preprocessor import *
 y_true = []
 y_predicted = []
 target_names = ['China', 'Taiwan']
 
-# Moving files into the testing dataset
-def move_files(from_dir: str, to_dir: str, N: int):
-    """Move N text files from from_dir to to_dir
-
-    Args:
-        from_dir (str): the current directory
-        to_dir (str): the target directory
-        N (int): amount of files sent
-    """
-    directory = os.fsencode(from_dir)
-    for index, file in enumerate(os.listdir(directory)):
-        filename = os.fsdecode(file)
-        if filename.endswith(".txt"):
-            from_file = str(os.path.join(from_dir, filename))
-            to_file = str(os.path.join(to_dir, filename))
-            os.rename(from_file, to_file) 
-        if index == N-1:
-            break
-
-moved_files_number = 500 
+moved_files_number = 3000
 # Moving files into the testing dataset     
 move_files('./ChinaDataset/', './TestingDataset/China/', moved_files_number)
 move_files('./TaiwanDataset/', './TestingDataset/Taiwan/', moved_files_number)
@@ -36,7 +18,7 @@ taiwan_dataset = files_to_list('./TaiwanDataset/')
 china_test = files_to_list('./TestingDataset/China/')
 taiwan_test = files_to_list('./TestingDataset/Taiwan/')
 
-n_parameter = 2
+n_parameter = 1
 
 print("Process: Train the models")
 # Train the China n-gram model

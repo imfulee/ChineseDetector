@@ -1,5 +1,6 @@
 import re
 from typing import List
+import os
 
 def clean_string(sentence: str) -> str:
     """Clear the string of non-chinese characters
@@ -39,3 +40,22 @@ def padding_list(someList: List[str], N: int) -> List[str]:
     for i in range(N):
         someList = ['<s>'] + someList + ['</s>']
     return someList
+
+# Moving files into the testing dataset
+def move_files(from_dir: str, to_dir: str, N: int):
+    """Move N text files from from_dir to to_dir
+
+    Args:
+        from_dir (str): the current directory
+        to_dir (str): the target directory
+        N (int): amount of files sent
+    """
+    directory = os.fsencode(from_dir)
+    for index, file in enumerate(os.listdir(directory)):
+        filename = os.fsdecode(file)
+        if filename.endswith(".txt"):
+            from_file = str(os.path.join(from_dir, filename))
+            to_file = str(os.path.join(to_dir, filename))
+            os.rename(from_file, to_file) 
+        if index == N-1:
+            break

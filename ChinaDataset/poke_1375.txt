@@ -1,1 +1,0 @@
-3DS亂數工具裏的KeyBV把對戰影片丟進去求TSV和TRV算出來的TRV是三位數 取末位就好了嗎?(不知道爲何這數字跟ID計算機的數值都不同...哪個纔是對的呢?) 表idxor裏id 十六進制取最後一位 @wwwwwwzx 大佬還在嗎? 這個還用填trv的？我記得以前我傳一隻給朋友要tsv就好了。然後就可以亂了。那個0我感覺也要寫進去 可以找有破解機的朋友幫你看下TID和SID,然後用這個計算TRV,https://github.com/wwwwwwzx/3DSRNGTool/releases?sfc=qqfriend&client_type=2&client_version=11.10.8.6&st=1604164826 有人有留g7初始御三家測tsv的軟體嗎？
