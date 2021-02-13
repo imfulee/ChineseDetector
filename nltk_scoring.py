@@ -9,11 +9,12 @@ y_true = []
 y_predicted = []
 target_names = ['China', 'Taiwan']
 
+'''
 moved_files_number = 3000
 # Moving files into the testing dataset     
 move_files('./ChinaDataset/', './TestingDataset/China/', moved_files_number)
 move_files('./TaiwanDataset/', './TestingDataset/Taiwan/', moved_files_number)
-
+'''
 # Read the training files
 print("Process: Read the files")
 china_dataset = files_to_list('./ChinaDataset/')
@@ -50,12 +51,14 @@ def log_score(model, N, sentence):
         log_score += math.log(model.unmasked_score(word=ngram_sent[-1], context=ngram_sent[0:-1]))
     return log_score
 
+# def scoring(y_)
+
 
 sentence = ''
 # Classifier
 print(f"Process: Calculating F1 Score (N={N})")
 for index, doc in enumerate(china_test):
-    print(f"China -> {index}", end='\r')
+    print(f"China -> {index}/3000", end='\r')
     china_prob = log_score(china_model, N, doc)
     taiwan_prob = log_score(taiwan_model, N, doc)
     
@@ -65,10 +68,10 @@ for index, doc in enumerate(china_test):
     else:
         y_predicted.append(0)
 
-print("China -> Done")
+print("China -> 3000/3000")
 
 for index, doc in enumerate(taiwan_test):
-    print(f"Taiwan -> {index}", end='\r')
+    print(f"Taiwan -> {index}/3000", end='\r')
     china_prob = log_score(china_model, N, doc)
     taiwan_prob = log_score(taiwan_model, N, doc)
 
@@ -78,10 +81,12 @@ for index, doc in enumerate(taiwan_test):
     else:
         y_predicted.append(0)
 
-print("Taiwan -> Done")
+print("Taiwan -> 3000/3000")
 
 print(classification_report(y_true, y_predicted, target_names=target_names))
 
+'''
 # Moving files away from the testing database
 move_files('./TestingDataset/China/', './ChinaDataset/', moved_files_number)
 move_files('./TestingDataset/Taiwan/', './TaiwanDataset/', moved_files_number)
+'''
